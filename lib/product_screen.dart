@@ -7,8 +7,19 @@ class ProductScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView(
-      children: [Center(child: ItemContainer())],
-    ));
+      body: ListView(
+        scrollDirection: Axis.horizontal,
+        children: const [
+          SizedBox(height: 30),
+          Center(
+            child: ItemContainer(),
+          ),
+          SizedBox(width: 30),
+          Center(
+            child: ItemContainer(),
+          )
+        ],
+      ),
+    );
   }
 }
