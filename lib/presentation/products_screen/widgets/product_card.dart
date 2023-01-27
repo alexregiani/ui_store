@@ -11,11 +11,16 @@ class ProductCard extends StatelessWidget {
       height: 300,
       child: Card(
         clipBehavior: Clip.antiAliasWithSaveLayer,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        elevation: 20,
-        child: Container(
-          transform: Matrix4.translationValues(0, -50, 0),
-          child: Image.asset('assets/chair1.jpeg'),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        elevation: 10,
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Container(
+            transform: Matrix4.translationValues(0, -50, 0),
+            child: Image.asset('assets/chair1.jpeg'),
+          ),
         ),
       ),
     );
