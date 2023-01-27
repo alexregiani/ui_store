@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_store/presentation/products_screen/widgets/item_container.dart';
+import 'package:ui_store/presentation/products_screen/widgets/product_card.dart';
 
 class ProductScreen extends StatelessWidget {
   const ProductScreen({Key? key}) : super(key: key);
@@ -12,11 +12,11 @@ class ProductScreen extends StatelessWidget {
         children: const [
           SizedBox(height: 30),
           Center(
-            child: ItemContainer(),
+            child: ProductCard(),
           ),
           SizedBox(width: 30),
           Center(
-            child: ItemContainer(),
+            child: ProductCard(),
           )
         ],
       ),
