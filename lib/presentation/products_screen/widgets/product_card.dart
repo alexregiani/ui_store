@@ -17,9 +17,9 @@ class ProductCard extends StatelessWidget {
         elevation: 10,
         child: Padding(
           padding: const EdgeInsets.all(15.0),
-          child: Container(
-            transform: Matrix4.translationValues(0, -50, 0),
-            child: Image.asset('assets/chair1.jpeg'),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child: Image.asset('assets/chair1.jpeg', fit: BoxFit.fitHeight),
           ),
         ),
       ),
