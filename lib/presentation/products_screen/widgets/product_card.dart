@@ -50,7 +50,6 @@ class ProductCard extends StatelessWidget {
         right: 45,
         width: 150,
         child: Column(
-          mainAxisSize: MainAxisSize.max,
           children: [
             ListTile(
               title: Text(title),
