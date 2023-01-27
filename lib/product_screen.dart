@@ -12,15 +12,21 @@ class ProductScreen extends StatelessWidget {
         children: const [
           SizedBox(width: 30),
           Center(
-            child: ProductCard(),
+            child: ProductCard(
+                title: 'chair 1', subtitle: 'description', price: 500.0),
           ),
           SizedBox(width: 30),
           Center(
-            child: ProductCard(),
+            child: ProductCard(
+                title: 'chair 2', subtitle: 'description', price: 500.0),
           ),
           SizedBox(width: 30),
           Center(
-            child: ProductCard(),
+            child: ProductCard(
+              title: 'chair 3',
+              subtitle: 'description',
+              price: 500.0,
+            ),
           ),
           SizedBox(width: 30),
         ],

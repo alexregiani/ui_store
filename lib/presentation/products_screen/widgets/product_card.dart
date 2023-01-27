@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
-  const ProductCard({Key? key}) : super(key: key);
+  const ProductCard(
+      {Key? key,
+      required this.title,
+      required this.subtitle,
+      required this.price})
+      : super(key: key);
+
+  final String title;
+  final String subtitle;
+  final double price;
 
   @override
   Widget build(BuildContext context) {
@@ -36,14 +45,21 @@ class ProductCard extends StatelessWidget {
           ),
         ),
       ),
-      const Positioned(
-        bottom: 30,
-        top: 175,
-        left: 5,
+      Positioned(
+        top: 172,
+        right: 45,
         width: 150,
-        child: ListTile(
-          title: Text('Green Chair'),
-          subtitle: Text('Description'),
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            ListTile(
+              title: Text(title),
+              subtitle: Text(subtitle),
+            ),
+            ListTile(
+              title: Text('$price'),
+            )
+          ],
         ),
       ),
     ]);
