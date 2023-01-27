@@ -15,18 +15,21 @@ class ProductCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
         elevation: 10,
-        child: FittedBox(
-          fit: BoxFit.contain,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(50),
-            child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(500),
-                ),
-                transform: Matrix4.translationValues(0, 0, 0),
-                child: Image.asset(
-                  'assets/chair1.jpeg',
-                )),
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: FittedBox(
+            alignment: Alignment.topCenter,
+            fit: BoxFit.contain,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(50),
+              child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(500),
+                  ),
+                  child: Image.asset(
+                    'assets/chair1.jpeg',
+                  )),
+            ),
           ),
         ),
       ),
