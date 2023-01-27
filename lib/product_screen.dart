@@ -10,14 +10,19 @@ class ProductScreen extends StatelessWidget {
       body: ListView(
         scrollDirection: Axis.horizontal,
         children: const [
-          SizedBox(height: 30),
+          SizedBox(width: 30),
           Center(
             child: ProductCard(),
           ),
           SizedBox(width: 30),
           Center(
             child: ProductCard(),
-          )
+          ),
+          SizedBox(width: 30),
+          Center(
+            child: ProductCard(),
+          ),
+          SizedBox(width: 30),
         ],
       ),
     );
