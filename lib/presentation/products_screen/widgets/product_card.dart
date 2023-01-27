@@ -23,12 +23,13 @@ class ProductCard extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(50),
               child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(500),
-                  ),
-                  child: Image.asset(
-                    'assets/chair1.jpeg',
-                  )),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(500),
+                ),
+                child: Image.asset(
+                  'assets/chair1.jpeg',
+                ),
+              ),
             ),
           ),
         ),
