@@ -16,7 +16,6 @@ class ProductCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(90)),
         width: 200,
         height: 300,
         child: Card(
@@ -29,16 +28,10 @@ class ProductCard extends StatelessWidget {
             padding: const EdgeInsets.all(15.0),
             child: FittedBox(
               alignment: Alignment.topCenter,
-              fit: BoxFit.contain,
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(50),
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                  ),
-                  child: Image.asset(
-                    'assets/chair1.jpeg',
-                  ),
+                borderRadius: BorderRadius.circular(60),
+                child: Image.asset(
+                  'assets/chair1.jpeg',
                 ),
               ),
             ),
@@ -57,8 +50,17 @@ class ProductCard extends StatelessWidget {
             ),
             ListTile(
               title: Text('$price'),
-            )
+            ),
           ],
+        ),
+      ),
+      Transform(
+        transform: Matrix4.translationValues(150, 250, 0),
+        child: const IconButton(
+          onPressed: null,
+          icon: Icon(
+            Icons.add,
+          ),
         ),
       ),
     ]);

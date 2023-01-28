@@ -25,7 +25,7 @@ class ProductScreen extends StatelessWidget {
             child: ProductCard(
               title: 'chair 3',
               subtitle: 'description',
-              price: 500.0,
+              price: 900.0,
             ),
           ),
           SizedBox(width: 30),
