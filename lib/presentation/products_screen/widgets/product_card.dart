@@ -32,8 +32,11 @@ class ProductCard extends StatelessWidget {
                 alignment: Alignment.topCenter,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(60),
-                  child: Image.asset(
-                    'assets/chair1.jpeg',
+                  child: Hero(
+                    tag: 'chair',
+                    child: Image.asset(
+                      'assets/chair1.jpeg',
+                    ),
                   ),
                 ),
               ),

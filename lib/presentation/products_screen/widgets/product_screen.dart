@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_store/presentation/products_screen/widgets/product_card.dart';
+import 'package:ui_store/presentation/products_screen/widgets/product_card_v2.dart';
 
 class ProductScreen extends StatelessWidget {
   const ProductScreen({Key? key}) : super(key: key);
@@ -15,17 +15,17 @@ class ProductScreen extends StatelessWidget {
         children: const [
           SizedBox(width: 30),
           Center(
-            child: ProductCard(
+            child: ProductCardV2(
                 title: 'chair 1', subtitle: 'description', price: 500.0),
           ),
           SizedBox(width: 30),
           Center(
-            child: ProductCard(
+            child: ProductCardV2(
                 title: 'chair 2', subtitle: 'description', price: 500.0),
           ),
           SizedBox(width: 30),
           Center(
-            child: ProductCard(
+            child: ProductCardV2(
               title: 'chair 3',
               subtitle: 'description',
               price: 900.0,
