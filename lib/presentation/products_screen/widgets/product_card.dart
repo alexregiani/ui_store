@@ -55,9 +55,9 @@ class ProductCard extends StatelessWidget {
         ),
       ),
       Transform(
-        transform: Matrix4.translationValues(170, 250, 0),
+        transform: Matrix4.translationValues(150, 250, 0),
         child: Ink(
-          decoration: ShapeDecoration(
+          decoration: const ShapeDecoration(
             shape: CircleBorder(),
             color: Colors.blue,
           ),
