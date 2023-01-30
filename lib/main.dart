@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_store/expanded_flexible_test.dart';
 import 'package:ui_store/presentation/products_screen/widgets/product_card_info.dart';
 import 'package:ui_store/presentation/products_screen/widgets/product_screen.dart';
 
@@ -21,6 +22,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const ProductScreen());
+        home: const ExpandedFlexibleTest());
   }
 }

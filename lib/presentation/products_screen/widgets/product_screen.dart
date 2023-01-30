@@ -13,17 +13,22 @@ class ProductScreen extends StatelessWidget {
       body: ListView(
         scrollDirection: Axis.horizontal,
         children: const [
-          SizedBox(width: 30),
           Center(
             child: ProductCardV2(
                 title: 'chair 1', subtitle: 'description', price: 500.0),
           ),
-          SizedBox(width: 30),
           Center(
             child: ProductCardV2(
                 title: 'chair 2', subtitle: 'description', price: 500.0),
           ),
-          SizedBox(width: 30),
+          Expanded(
+            child: Divider(
+              thickness: 20,
+              color: Colors.lightBlueAccent,
+              indent: 50,
+              height: 100,
+            ),
+          ),
           Center(
             child: ProductCardV2(
               title: 'chair 3',
@@ -31,7 +36,6 @@ class ProductScreen extends StatelessWidget {
               price: 900.0,
             ),
           ),
-          SizedBox(width: 30),
         ],
       ),
     );
