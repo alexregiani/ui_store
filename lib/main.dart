@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         routes: <String, WidgetBuilder>{
           '/root': (BuildContext context) => const ProductScreen(),
-          'ProductCardInfo': (BuildContext context) => const ProductCardInfo()
+          '/ProductCardInfo': (BuildContext context) => const ProductCardInfo(),
         },
         title: 'Flutter Demo',
         theme: ThemeData(

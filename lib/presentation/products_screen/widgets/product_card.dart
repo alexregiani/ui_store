@@ -18,20 +18,23 @@ class ProductCard extends StatelessWidget {
       Container(
         width: 200,
         height: 300,
-        child: Card(
-          // clipBehavior: Clip.antiAliasWithSaveLayer,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-          ),
-          elevation: 10,
-          child: Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: FittedBox(
-              alignment: Alignment.topCenter,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(60),
-                child: Image.asset(
-                  'assets/chair1.jpeg',
+        child: InkWell(
+          onTap: () => Navigator.pushNamed(context, '/ProductCardInfo'),
+          child: Card(
+            // clipBehavior: Clip.antiAliasWithSaveLayer,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            elevation: 10,
+            child: Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: FittedBox(
+                alignment: Alignment.topCenter,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(60),
+                  child: Image.asset(
+                    'assets/chair1.jpeg',
+                  ),
                 ),
               ),
             ),

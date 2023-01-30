@@ -5,6 +5,9 @@ class ProductCardInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return Scaffold(
+      appBar: AppBar(),
+      body: Column(children: [Image.asset('assets/chair1.jpeg')]),
+    );
   }
 }
