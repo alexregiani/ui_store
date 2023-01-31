@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ui_store/expanded_flexible_test.dart';
+import 'package:ui_store/presentation/products_screen/chair_screen.dart';
 import 'package:ui_store/presentation/products_screen/widgets/product_card_info.dart';
-import 'package:ui_store/presentation/products_screen/widgets/product_screen.dart';
+import 'package:ui_store/root_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,13 +15,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         routes: <String, WidgetBuilder>{
-          '/root': (BuildContext context) => const ProductScreen(),
+          '/root': (BuildContext context) => const ChairScreen(),
           '/ProductCardInfo': (BuildContext context) => const ProductCardInfo(),
         },
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const ExpandedFlexibleTest());
+        home: const RootNavBar());
   }
 }
