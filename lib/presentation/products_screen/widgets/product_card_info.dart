@@ -20,10 +20,7 @@ class ProductCardInfo extends StatelessWidget {
               bottomLeft: Radius.circular(40),
               bottomRight: Radius.circular(40),
             ),
-            child: Hero(
-              tag: 'chair',
-              child: Image.asset('assets/chair1.jpeg'),
-            ),
+            child: Image.asset('assets/chair1.jpeg'),
           ),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
