@@ -25,20 +25,14 @@ class ProductCardInfo extends StatelessWidget {
               child: Image.asset('assets/chair1.jpeg'),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      fixedSize: Size(50, 50),
-                      shape: CircleBorder(),
-                      elevation: 5),
-                  onPressed: () => print('pressed'),
-                  child: Icon(Icons.ac_unit_rounded)),
-            ),
-          )
+          ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  fixedSize: Size(50, 50),
+                  shape: CircleBorder(),
+                  elevation: 5),
+              onPressed: () => print('pressed'),
+              child: Icon(Icons.ac_unit_rounded))
         ]),
         const ListTile(
           title: Text('Chair', style: TextStyle(fontSize: 25)),
