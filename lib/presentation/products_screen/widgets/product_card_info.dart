@@ -6,21 +6,43 @@ class ProductCardInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        title: const Text('Chair'),
+        foregroundColor: Colors.blueAccent,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
       body: Column(children: [
-        ClipRRect(
-          borderRadius: const BorderRadius.only(
-            bottomLeft: Radius.circular(40),
-            bottomRight: Radius.circular(40),
+        Stack(children: [
+          ClipRRect(
+            borderRadius: const BorderRadius.only(
+              bottomLeft: Radius.circular(40),
+              bottomRight: Radius.circular(40),
+            ),
+            child: Hero(
+              tag: 'chair',
+              child: Image.asset('assets/chair1.jpeg'),
+            ),
           ),
-          child: Hero(
-            tag: 'chair',
-            child: Image.asset('assets/chair1.jpeg'),
-          ),
-        ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue,
+                      fixedSize: Size(50, 50),
+                      shape: CircleBorder(),
+                      elevation: 5),
+                  onPressed: () => print('pressed'),
+                  child: Icon(Icons.ac_unit_rounded)),
+            ),
+          )
+        ]),
         const ListTile(
-          title: Text('500.0'),
-          subtitle: Text('Chair'),
+          title: Text('Chair', style: TextStyle(fontSize: 25)),
+          subtitle: Text('500.0', style: TextStyle(fontSize: 20)),
         ),
         const ListTile(
           title: Text('Description'),

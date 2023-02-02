@@ -8,7 +8,7 @@ class TableScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chairs'),
+        title: Text('Tables'),
       ),
       body: ListView(
         scrollDirection: Axis.horizontal,
